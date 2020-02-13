@@ -1,0 +1,289 @@
+<html>
+<head>
+  <!-- Titre de la page --> 
+		<title> TUNIS</title>
+		<meta http-equiv="content.type" content="text/html"; charset="UTF-8">
+    <!-- Petite image sur l'onglet --> 
+		<link rel="icon" href="../../img/logo/Tunisia_logo.svg.ico">
+    <!-- lien vers le fichier bootstrap --> 
+		<link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+     <!-- lien vers le fichier css --> 
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Librairie jQuery -->
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- jQuery Easing - Rajoute des modes de défilement (pages des monuments) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <!-- Script Bootstrap -->
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700&amp;amp;subset=cyrillic" rel="stylesheet">
+
+	</head>
+  <div id="wrap">
+<nav class="navbar navbar-inverse" id="navbar">
+                <div class="container-fluid">
+                  <!-- barre de navigation --> 
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <img src="../../img/logo/logo_tunis.png" alt="icon" id="navicon" height="50px">
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li class=""><a href="../../homeen.html">Home</a></li>
+                            <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Culture <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="medinaen.html">Tunis Medina</a></li>
+                        <li><a href="artculinaireen.html">Culinary Art</a></li>
+                        <li><a href="auxalentoursen.html">Around</a></li>
+                    </ul>
+                       </li>
+                            <li><a href="galerieen.html">Galery</a></li>
+                            <li><a href="planen.html">Plan</a></li>
+                            <li><a href="aproposen.php">About</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="li-flag"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img class="logolangue" src="../../img/en.png" width="15" height="10"> Anglais<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../fr/medina.html"><img class="logolangue" src="../../img/fr.png" width="15" height="10"> Français</a></li>
+                    </ul></li>
+                        </ul>
+                    </div>
+                </div>
+</nav>
+
+        <style>
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$('.js-scrollTo').on('click', function() { // Au clic sur un élément
+			var page = $(this).attr('href'); // Page cible
+			var speed = 750; // Durée de l'animation (en ms)
+			$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+			return false;
+		});
+	});
+</script>
+<body>
+<div class="container container-home">
+    <div class="container">
+        <div class="media-container-row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 card-title pb-3 mbr-fonts-style display-7"><h1 class="apropos">Tunis Medina</h1></div>
+            <div class="p-3 col-xs-12 col-sm-12 col-md-6 col-lg-6">
+             <div class="cercle-global cercle-link" href="#architecture">
+            <div class="cercle cercle-monastere-architecture"><img src="../../img/monument/histoire_medina.jpg" class="img-responsive" style="background-repeat: no-repeat;"></div>
+            <div class="textArticle">
+                        <h4 class="card-title pb-3 mbr-fonts-style display-7 text-center">History</h4>
+                        </div>
+            <div class="cercle-plus-infos"><p class="text-center"><a href="#Histoire" class="btn btn-md btn-primary js-scrollTo" role="button" class="tablinks" onclick="openMedina(event, 'Histoire')">Learn +</a></p></div>
+                </div>
+            </div>
+            <div class="p-3 col-xs-12 col-sm-12 col-md-6 col-lg-6">
+             <div class="cercle-global cercle-link" href="#architecture">
+            <div class="cercle cercle-monastere-architecture"><img src="../../img/monument/architecture_medina.jpg" class="img-responsive" style="background-repeat: no-repeat;"></div>
+            <div class="textArticle">
+                        <h4 class="card-title pb-3 mbr-fonts-style display-7 text-center">Architectural</h4>
+                        </div>
+            <div class="cercle-plus-infos"><p class="text-center"><a href="#Architecture" class="btn btn-md btn-primary js-scrollTo" role="button" class="tablinks" onclick="openMedina(event, 'Architecture')">Learn +</a></p></div>
+                </div>
+            </div>
+            </div>
+    </div>
+  </div>
+</div>
+
+<div id="Histoire" class="tabcontent">
+
+<div class="trait1" id="histoiremedina"></div>
+<div class="container container-home">
+    <div class="container">
+        <div class="media-container-row">
+    <h3>History</h3>
+</div>
+</div>
+</div>
+<div class="container container-home">
+    <div class="container text">
+        <div class="media-container-row">
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 centre">
+            <p class="archi">The visit of the medina, ancient city, carries in it a special atmosphere, it is the occasion of a journey through time that introduces, step by step, and through a maze with subtle compositions of shadows and lights, in the historical heart of the city of Tunis, a city rich in history and situated on a plan of continuous evolution.</p>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <img class="img-responsive" src="../../img/monument/belle_image_medina.jpg">
+            <div class="text-img-photo-legend">Medina</div>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="container container-home">
+    <div class="container text">
+        <div class="media-container-row">
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <img class="img-responsive" src="../../img/monument/certif_medina.jpg">
+            <div class="text-img-photo-legend">Certification</div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+            <p class="archi">Because of its geographical and human importance in terms of its typical architectural style and spatial organization, this city represents an accomplished model of the Arab urban civilization in the Maghreb, and that the international organization of UNESCO has elected to the cultural heritage of humanity.</p>
+        </div>
+    </div>
+  </div>
+</div>
+<div class="container container-home">
+    <div class="container text">
+        <div class="media-container-row">
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+            <p class="archi">Founded in 698, it develops its structure throughout the Middle Ages, to the north and to the south, thus dividing itself into a main medina and two suburbs to the north (Bab Souika) and to the south (Bab El Jazira).</p>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <img class="img-responsive" src="../../img/monument/peinture_medina.jpg">
+            <div class="text-img-photo-legend">Medina in paint</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container container-home">
+    <div class="container text">
+        <div class="media-container-row">
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <img class="img-responsive" src="../../img/monument/artisanat.jpg">
+            <div class="text-img-photo-legend">Craft</div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+            <p class="archi">Today, the medina alone inspires and constitutes a tourist attraction as well as a sentimental attraction, because of its history, its cultural richness and the craftsmanship that remains within its walls, its streets and its doors.</p>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+<div id="Architecture" class="tabcontent">
+
+  <div class="trait1" id="histoiremedina"></div>
+<div class="container container-home">
+    <div class="container">
+        <div class="media-container-row">
+    <h3>Architectural</h3>
+</div>
+</div>
+</div>
+<div class="container container-home">
+    <div class="container text">
+        <div class="media-container-row">
+         <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 centre">
+            <p class="archi">The medina of Tunis was in an oval form, surrounded by a continuous wall and dominated by a Kasba, seat of the Almohado-Hafsid government. It is built around the religious centre of the great Zitouna mosque, opening on a wide esplanade serving both as a market, a place for public meetings and a place for military parades.</p>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <img class="img-responsive" src="../../img/monument/haut_medina.jpg">
+            <div class="text-img-photo-legend">Aerial View</div>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="container container-home">
+    <div class="container text">
+        <div class="media-container-row">
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <img class="img-responsive" src="../../img/monument/architecture.png">
+            <div class="text-img-photo-legend">Plan</div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+            <p class="archi">The architecture of the medina forms a network similar to a spider web and represents the typical example of the Arab-Muslim city. It is a marvellous illustration of the richness of the old town by its style, which distinguishes it from the modern city with its checkered avenues.</p>
+        </div>
+    </div>
+  </div>
+</div>
+<div class="container container-home">
+    <div class="container text">
+        <div class="media-container-row">
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+            <p class="archi">In terms of the architecture of the houses, two specificities emerge. First, the height of the walls masks the interior of the house. Second, the homes reflect very little of the wealth of their owners, unlike the western model where architecture reflected the wealth and social status of the owners.</p>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <img class="img-responsive" src="../../img/monument/medina.jpg">
+            <div class="text-img-photo-legend">Tunis Medina</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container container-home">
+    <div class="container text">
+        <div class="media-container-row">
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <img class="img-responsive" src="../../img/monument/porte_medina.jpg">
+            <div class="text-img-photo-legend">Tunis Door</div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+            <p class="archi">This discretion which served social peace was most probably inseparable from the double character of the Arab-Muslim tradition: to limit the ostentation and the exhibition of what takes place in the house. The only exception: the entrance doors, whose ornamentation and material were revealing.</p>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<script>
+function openMedina(evt, Medina) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(Medina).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+
+
+
+  <div class="traitfoot"></div>
+<div id="footer">
+    <div class="footer-container">
+        <div class="footer-left">
+      <a href="http://www.u-pem.fr/"><img class="logofooter" src="../../img/logo/upem.png"></a>
+            <img class="logofooter" src="../../img/logo/logoprojet.png">
+            <a href="https://fr.unesco.org/"><img class="logofooter" src="../../img/logo/unesco.png"></a>
+         <img class="logofooter" src="../../img/logo/forumunesco.png">
+        </div>
+        <div class="footer-right">
+        
+                     <a href="https://twitter.com/Tunis_MCN_UPEM/" class="icon-button twitter"><i class="fab fa-twitter"></i><span></span></a>
+          <a href="https://www.facebook.com/Tunis.MCN.UPEM/" class="icon-button facebook"><i class="fab fa-facebook-f"></i><span></span></a>
+          <a href="https://www.instagram.com/tunis_mcn/" class="icon-button instagram"><i class="fab fa-instagram"></i><span></span></a>
+           <a href="https://www.youtube.com/channel/UCFzKYSAD4XkU3Na1buosw6A" class="icon-button youtube"><i class="fab fa-youtube"></i><span></span></a>
+           <a href="" class="icon-button linkedin"><i class="fab fa-linkedin-in"></i><span></span></a>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+</div>
+</div>
+</body>
+</html>
